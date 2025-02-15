@@ -1,0 +1,19 @@
+{
+	"geode": "4.0.0-beta.2",
+	"gd": {
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074",
+		"ios": "2.2074"
+	},
+	"id": "km7dev.soggy_basement",
+	"name": "Soggy Basement",
+	"version": "v1.0.0",
+	"developer": "km7dev",
+	"description": "Check the basement.",
+  "resources": {
+    "sprites": [
+      "resources/sog.png"
+    ]
+  }
+}
