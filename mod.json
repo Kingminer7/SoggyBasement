@@ -1,5 +1,5 @@
 {
-	"geode": "4.0.0-beta.2",
+	"geode": "4.2.0",
 	"gd": {
 		"win": "2.2074",
 		"android": "2.2074",
@@ -15,5 +15,8 @@
     "sprites": [
       "resources/sog.png"
     ]
-  }
+  },
+	"dependencies": {
+		"geode.node-ids": "1.19.0"
+	}
 }
