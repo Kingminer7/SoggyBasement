@@ -1,3 +1,5 @@
-# Template Mod
+# Soggy Basement
 
-Edit about.md to change this
+They done locked my soggy cat up
+
+Adds soggy cat to the basement after freeing the monster and opening the chest.

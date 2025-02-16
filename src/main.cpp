@@ -9,23 +9,19 @@ class $modify(SecretLayer3) {
 			return false;
     }
 
-    if (auto dungeonbar = getChildByType<DungeonBarsSprite>(0)) {
-      if (auto m = getChildByType<CCMenu>(1)) {
-        if (auto s = m->getChildByType<CCMenuItemSpriteExtra>(0)) {
-          log::info("h");
+    if (auto bars = getChildByID("bars")) {
+      if (!bars->isVisible()) {
+        if (!GameStatsManager::sharedState()->isSpecialChestUnlocked("0002")) {
           return true;
         }
-      }
-      if (!dungeonbar->isVisible()) {
-        dungeonbar->setVisible(true);
+        bars->setVisible(true);
         auto sogSprite = CCSprite::create("sog.png"_spr);
-        sogSprite->setPosition({dungeonbar->getPositionX(), dungeonbar->getPositionY() - 8});
+        sogSprite->setPosition({bars->getPositionX(), bars->getPositionY() - 8});
         sogSprite->setAnchorPoint({0.5, 0.5});
-        sogSprite->setZOrder(dungeonbar->getZOrder() - 1);
         sogSprite->setScaleX(0.425);
         sogSprite->setScaleY(0.300);
         sogSprite->setID("sogSprite"_spr);
-        addChild(sogSprite);
+        addChild(sogSprite, bars->getZOrder() - 1);
       }
     }
 
