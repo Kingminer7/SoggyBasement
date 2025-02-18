@@ -8,7 +8,7 @@
 	},
 	"id": "km7dev.soggy_basement",
 	"name": "Soggy Basement",
-	"version": "v1.0.0",
+	"version": "v1.0.1",
 	"developer": "km7dev",
 	"description": "Check the basement.",
   "resources": {
@@ -16,6 +16,9 @@
       "resources/sog.png"
     ]
   },
+	"tags": [
+    "joke"
+	],
 	"dependencies": {
 		"geode.node-ids": "1.19.0"
 	}
