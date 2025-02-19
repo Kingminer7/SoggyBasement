@@ -19,6 +19,7 @@ on:
 jobs:
   build-2:
     name: Build 2
+    if: github.event.inputs.build_type != 'release'
     runs-on: macos-latest
     continue-on-error: true
     steps:
