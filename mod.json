@@ -8,7 +8,7 @@
 	},
 	"id": "km7dev.soggy_basement",
 	"name": "Soggy Basement",
-	"version": "v1.0.2-alpha.1",
+	"version": "v1.0.2",
 	"developer": "km7dev",
 	"description": "Check the basement.",
   "resources": {
