@@ -1,25 +1,25 @@
 {
-	"geode": "4.3.1",
-	"gd": {
-		"win": "2.2074",
-		"android": "2.2074",
-		"mac": "2.2074",
-		"ios": "2.2074"
-	},
-	"id": "km7dev.soggy_basement",
-	"name": "Soggy Basement",
-	"version": "v1.0.2",
-	"developer": "km7dev",
-	"description": "Check the basement.",
-  "resources": {
-    "sprites": [
-      "resources/sog.png"
-    ]
-  },
-	"tags": [
-    "joke"
-	],
-	"dependencies": {
-		"geode.node-ids": "1.20.1"
-	}
+    "geode": "4.4.0",
+    "gd": {
+        "win": "2.2074",
+        "android": "2.2074",
+        "mac": "2.2074",
+        "ios": "2.2074"
+    },
+    "id": "km7dev.soggy_basement",
+    "name": "Soggy Basement",
+    "version": "v1.1.0",
+    "developer": "km7dev",
+    "description": "Check the basement.",
+    "resources": {
+        "sprites": [
+            "resources/sog.png"
+        ]
+    },
+    "tags": [
+        "joke"
+    ],
+    "dependencies": {
+        "geode.node-ids": "1.20.1"
+    }
 }
