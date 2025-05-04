@@ -43,7 +43,7 @@ jobs:
 
     name: ${{ matrix.config.name }}
     runs-on: ${{ matrix.config.os }}
-    continue-on-error: true
+    continue-on-error: ${{ github.event.inputs.build_type != 'release' }}
     steps:
       - uses: actions/checkout@v4
 
@@ -56,8 +56,6 @@ jobs:
           bindings: geode-sdk/bindings
           bindings-ref: main
           combine: true
-          sdk: nightly
-          cli: nightly
           build-config: ${{ github.event.inputs.build_type != 'release' && 'RelWithDebInfo' || 'Release' }}
           export-pdb: ${{ github.event.inputs.build_type != 'release' }}
           # export-symbols: ${{ github.event.inputs.build_type != 'release' }}
