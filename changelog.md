@@ -1,3 +1,6 @@
+# 1.1.1
+- JIT-less iOS support
+
 # 1.1.0
 - New soggy sprite by [availax](https://availax.xyz)
 
