@@ -24,7 +24,8 @@ jobs:
       matrix:
         config:
         - name: Windows
-          os: windows-latest
+          os: ubuntu-latest
+          target: Win64
 
         - name: macOS
           os: macos-latest
@@ -51,7 +52,7 @@ jobs:
         run: echo "RELEASE_BUILD=${{ github.event.inputs.build_type == 'release' }}" >> $GITHUB_ENV
 
       - name: Build the mod
-        uses: geode-sdk/build-geode-mod@main
+        uses: hiimjasmine00/build-geode-mod@xwin
         with:
           bindings: geode-sdk/bindings
           bindings-ref: main
@@ -89,9 +90,6 @@ jobs:
         with:
           path: './artifacts/'
 
-      #- run: |
-      #    7z x ./artifacts/build-output.zip
-
       - name: Create Nightly Release
         uses: andelf/nightly-release@main
         env:
@@ -125,17 +123,7 @@ jobs:
       - name: Read mod version & mod id
         id: read_version
         run: |
-          MOD_VERSION=$(jq -r '.version' mod.json)
-          set +e
-          curl --fail "https://api.github.com/repos/geode-sdk/geode/releases/tags/v$VERSION" --silent --output /dev/null
-          RESULT=$?
-          set -e
-          
-          if [ $RESULT -eq 0 ]; then
-            echo "Release already exists! Not replacing it.."
-            exit 1
-          fi
-          echo "MOD_VERSION=$MOD_VERSION" >> $GITHUB_ENV
+          echo "MOD_VERSION=$(jq -r '.version' mod.json)" >> $GITHUB_ENV
       - name: Create Draft Release
         uses: softprops/action-gh-release@v1
         env:
