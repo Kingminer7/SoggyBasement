@@ -1,5 +1,6 @@
 # Soggy Basement
-<img src="https://raw.githubusercontent.com/Capeling/soggy-mod/refs/heads/main/resources/SoggySheet/GJ_sog_001.png">
+<img src="https://github.com/Capeling/soggy-mod/blob/main/resources/bgs/SM_sog_001.png?raw=true">
 
 ## Credits
+
 - Soggy sprite by [availax](https://availax.xyz)
