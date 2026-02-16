@@ -9,7 +9,7 @@ else()
 endif()
 set(CMAKE_CXX_VISIBILITY_PRESET hidden)
 
-project(SoggyBasement VERSION 1.0.0)
+project(SoggyBasement VERSION 1.1.2)
 
 add_library(${PROJECT_NAME} SHARED
     src/main.cpp
