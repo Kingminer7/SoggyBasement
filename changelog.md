@@ -1,3 +1,7 @@
+# 1.1.3
+
+- Add a link to source repo.
+
 # 1.1.2
 
 - Update to Geode v5 / GD 2.2081
