@@ -1,3 +1,6 @@
+# [Moved to Codeberg](https://codeberg.org/km7dev/SoggyBasement)
+
+
 # Soggy Basement
 
 ![Mod Version](https://api.geode-sdk.org/v1/mods/km7dev.soggy_basement/status_badge?stat=version)
